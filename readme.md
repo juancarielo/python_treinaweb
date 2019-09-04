@@ -1,5 +1,6 @@
 # Python TreinaWeb
 Simple repository to enjoy the week of the Python and Django with TreinaWeb.
+To know more details follow this link: https://lp.treinaweb.com.br/python
 
 ## Create virtualenv
  Creating the virtual environment for this project:
