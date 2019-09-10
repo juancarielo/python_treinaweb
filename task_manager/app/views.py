@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def list(request):
+    title = 'List'
+    return render(request, 'task/list.html', {'title': title})
