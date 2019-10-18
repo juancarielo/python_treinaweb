@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h1>{{ task.title }}</h1>
+            {{ task.description }} <br>
+            {{ task.date_expiration }} <br>
+            {{ task.get_priority_display }} <br>
+        </div>
+    </div>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p>Are you sure you want to delete?</p>
+        <input type="submit" class="btn btn-danger" value="Delete">
+        <a href="{% url 'list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>    
+{% endblock content %}

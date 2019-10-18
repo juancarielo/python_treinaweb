@@ -29,6 +29,7 @@ $ pip install Django==2.2.4
 ## Create the project and app
 With Django installed, follow this commands:
 ```sh
+$ mkdir python-treinaweb && cd python-treinaweb
 $ django-admin startproject task_manager
 $ python manage.py startapp app
 ```

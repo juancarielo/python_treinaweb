@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <table class="table table-bordered">
+        <thead>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Date expiration</th>
+            <th>Priority</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>        
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.description }}</td>
+                    <td>{{ task.date_expiration }}</td>
+                    <td>{{ task.get_priority_display }}</td>
+                    <td>
+                        <a href="{% url 'edit' task.id %}">Edit</a>
+                        <a href="{% url 'delete' task.id %}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock content %}
