@@ -38,3 +38,6 @@ $ python manage.py startapp app
 $ cd task_manager
 $ python manager.py runserver
 ```
+
+to install mysqlclient
+sudo apt-get install python-dev default-libmysqlclient-dev
