@@ -1,2 +1,3 @@
 *.py     text diff=python
 *.py3    text diff=python
+*.js     linguist-detectable=false
